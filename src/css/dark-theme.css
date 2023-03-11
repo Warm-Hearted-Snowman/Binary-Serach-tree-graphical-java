@@ -1,0 +1,112 @@
+* {
+    /*-fx-secondary : #A5f0c5 ;
+    -fx-primary : #184D47 ;*/
+    /*-fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;*/
+    /*-fx-primary : #3A1078;
+    -fx-secondary : #3795BD;*/
+    -fx-primary: #181823;
+    /*-fx-primary: #F0EEED;*/
+    -fx-secondary: #E90064;
+    -fx-tertiary: #d6c6c3;
+    -fx-primarytext: #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1: #1976D2;
+    -fx-font-weight: bold;
+    -fx-alignment: center-right;
+    -fx-direction: rtl !important;
+    -fx-font-family: "shabnam", "iranSans", "iranYakan", "Arial";
+}
+
+.root {
+    -fx-background-color: -fx-primary;
+}
+
+.glyph-icon {
+    -fx-fill: -fx-primarytext;
+}
+
+.titledPane {
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+}
+
+.button {
+    -fx-text-fill: -fx-secondary;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+    -fx-border-weight: 3px;
+    -fx-cursor: hand;
+    -fx-alignment: center !important;
+}
+
+.button:hover, .button:focused {
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+.label {
+    -fx-text-fill: #001d54;
+    -fx-alignment: center;
+}
+
+.label-edited {
+    -fx-text-fill: #E96479;
+    -fx-background-color: #18122B;
+    -fx-border-color: #E96479;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+    -fx-border-weight: 3px;
+    -fx-padding: 15;
+    -fx-horizontalScroll: true-type;
+    -fx-alignment: left !important;
+}
+
+.text-field {
+    -fx-text-fill: -fx-secondary;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+    -fx-border-weight: 3px;
+    -fx-cursor: hand;
+    -fx-padding: 15;
+    -fx-alignment: left !important;
+}
+
+.text-field:focused {
+    -fx-text-fill: -fx-secondary;
+    -fx-background-color: #000;
+    -fx-border-color: #CD0404;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-size: 12pt;
+    -fx-border-weight: 3px;
+    -fx-cursor: hand;
+    -fx-alignment: left !important;
+}
+.controllabilities {
+    height: 100px;
+    width: 200px;
+    font-size: 82%;
+    overflow: scroll;
+}
+
+.hand {
+    -fx-cursor: hand;
+}
+
+/*Custom window background*/
+.custom-pane {
+    -fx-background-color: derive(-fx-primary, 5%);
+}

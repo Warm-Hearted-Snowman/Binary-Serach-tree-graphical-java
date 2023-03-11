@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" stylesheets="/css/dark-theme.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MenuController">
+    <children>
+        <AnchorPane fx:id="anchorPane" prefHeight="1080.0" prefWidth="1920.0">
+            <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#04121e" height="1080.0" layoutX="490.0" stroke="BLACK" strokeType="INSIDE" width="1440.0" />
+                <Line endX="980.0" fill="#181823" layoutY="550.0" rotate="90.0" />
+                <Label fx:id="ShowData" layoutX="30.0" layoutY="840.0" prefHeight="70.0" prefWidth="430.0" styleClass="label-edited" />
+                <TextField fx:id="InputData" layoutX="30.0" layoutY="110.0" prefHeight="70.0" prefWidth="430.0" />
+                <Button fx:id="addNumber" layoutX="30.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="50.0" prefWidth="200.0" text="Add Number" />
+                <Button fx:id="NodeNumber" layoutX="30.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleNodeNum" prefHeight="50.0" prefWidth="200.0" text="Number of Nodes" />
+                <Button fx:id="TreeHeight" layoutX="30.0" layoutY="370.0" mnemonicParsing="false" onAction="#handleTreeHeight" prefHeight="50.0" prefWidth="200.0" text="Height of tree" />
+                <Button fx:id="LeavesNumber" layoutX="30.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleLeavesNum" prefHeight="50.0" prefWidth="200.0" text="Number of leaves" />
+                <Button fx:id="MinElement" layoutX="30.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleMinVal" prefHeight="50.0" prefWidth="200.0" text="Minimum Element" />
+                <Button fx:id="MaxElement" layoutX="30.0" layoutY="595.0" mnemonicParsing="false" onAction="#handleMaxVal" prefHeight="50.0" prefWidth="200.0" text="Maximum Element" />
+                <Button fx:id="CompleteTree" layoutX="30.0" layoutY="670.0" mnemonicParsing="false" onAction="#handleIsComplete" prefHeight="50.0" prefWidth="200.0" text="Is Tree complete" />
+                <Button fx:id="CompareTree" layoutX="30.0" layoutY="745.0" mnemonicParsing="false" onAction="#handleCompareTrees" prefHeight="50.0" prefWidth="200.0" text="Compare two Trees" />
+                <Button fx:id="DeleteTree" layoutX="260.0" layoutY="670.0" mnemonicParsing="false" onAction="#handleDeleteTree" prefHeight="50.0" prefWidth="200.0" text="Delete Tree" />
+                <Button fx:id="LOTraversal" layoutX="260.0" layoutY="595.0" mnemonicParsing="false" onAction="#handleLevelOrderTraversal" prefHeight="50.0" prefWidth="200.0" text="Level-Order" />
+                <Button fx:id="IOTraversal" layoutX="260.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleInOrderTraversal" prefHeight="50.0" prefWidth="200.0" text="In Order" />
+                <Button fx:id="PreOTraversal" layoutX="260.0" layoutY="445.0" mnemonicParsing="false" onAction="#handlePreOrderTraversal" prefHeight="50.0" prefWidth="200.0" text="Pre Order" />
+                <Button fx:id="FindNode" layoutX="260.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleFindNode" prefHeight="50.0" prefWidth="200.0" text="Find Node" />
+                <Button fx:id="PostOTraversal" layoutX="260.0" layoutY="370.0" mnemonicParsing="false" onAction="#handlePostOrderTraversal" prefHeight="50.0" prefWidth="200.0" text="Post Order" />
+                <Button fx:id="RemoveNumber" layoutX="260.0" layoutY="220.0" mnemonicParsing="false" onAction="#handleRemove" prefHeight="50.0" prefWidth="200.0" text="Remove Number" />
+                <Button layoutX="260.0" layoutY="745.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="50.0" prefWidth="200.0" text="Exit" />
+                <Line fx:id="line13" endX="220.0" fill="#FFFF8D" layoutX="1318.0" layoutY="245.0" rotate="30.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line12" endX="220.0" fill="#FFFF8D" layoutX="978.0" layoutY="245.0" rotate="-30.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line37" endX="150.0" fill="#FFFF8D" layoutX="1618.0" layoutY="455.0" rotate="50.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line25" endX="150.0" fill="#FFFF8D" layoutX="948.0" layoutY="465.0" rotate="50.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line24" endX="150.0" fill="#FFFF8D" layoutX="748.0" layoutY="465.0" rotate="-50.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line36" endX="150.0" fill="#FFFF8D" layoutX="1438.0" layoutY="445.0" rotate="-50.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line715" endX="150.0" fill="#FFFF8D" layoutX="1740.0" layoutY="645.0" rotate="65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line613" endX="150.0" fill="#FFFF8D" layoutX="1400.0" layoutY="645.0" rotate="65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line511" endX="150.0" fill="#FFFF8D" layoutX="1060.0" layoutY="645.0" rotate="65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line49" endX="150.0" fill="#FFFF8D" layoutX="720.0" layoutY="645.0" rotate="65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line510" endX="150.0" fill="#FFFF8D" layoutX="960.0" layoutY="645.0" rotate="-65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line714" endX="150.0" fill="#FFFF8D" layoutX="1650.0" layoutY="635.0" rotate="-65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line612" endX="150.0" fill="#FFFF8D" layoutX="1300.0" layoutY="635.0" rotate="-65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line48" endX="150.0" fill="#FFFF8D" layoutX="620.0" layoutY="645.0" rotate="-65.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line817" endX="50.0" fill="#FFFF8D" layoutX="650.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line919" endX="50.0" fill="#FFFF8D" layoutX="830.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1021" endX="50.0" fill="#FFFF8D" layoutX="1000.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1123" endX="50.0" fill="#FFFF8D" layoutX="1170.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1225" endX="50.0" fill="#FFFF8D" layoutX="1340.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1327" endX="50.0" fill="#FFFF8D" layoutX="1500.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1429" endX="50.0" fill="#FFFF8D" layoutX="1680.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1531" endX="50.0" fill="#FFFF8D" layoutX="1850.0" layoutY="800.0" rotate="75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1530" endX="50.0" fill="#FFFF8D" layoutX="1790.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1428" endX="50.0" fill="#FFFF8D" layoutX="1630.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1326" endX="50.0" fill="#FFFF8D" layoutX="1450.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1224" endX="50.0" fill="#FFFF8D" layoutX="1280.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1122" endX="50.0" fill="#FFFF8D" layoutX="1110.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line1020" endX="50.0" fill="#FFFF8D" layoutX="940.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line918" endX="50.0" fill="#FFFF8D" layoutX="770.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Line fx:id="line816" endX="50.0" fill="#FFFF8D" layoutX="600.0" layoutY="800.0" rotate="-75.0" startX="-100.0" stroke="TRANSPARENT" />
+                <Circle fx:id="c1" fill="#04121e" layoutX="1210.0" layoutY="150.0" radius="100.0" scaleX="0.4" scaleY="0.4" strokeType="INSIDE" />
+                <Circle fx:id="c2" fill="#04121e" layoutX="870.0" layoutY="340.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c3" fill="#04121e" layoutX="1550.0" layoutY="340.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c4" fill="#04121e" layoutX="700.0" layoutY="550.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c5" fill="#04121e" layoutX="1040.0" layoutY="550.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c6" fill="#04121e" layoutX="1370.0" layoutY="550.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c7" fill="#04121e" layoutX="1720.0" layoutY="550.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c8" fill="#04121e" layoutX="605.0" layoutY="740.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c9" fill="#04121e" layoutX="775.0" layoutY="740.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c10" fill="#04121e" layoutX="945.0" layoutY="740.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c11" fill="#04121e" layoutX="1115.0" layoutY="740.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c12" fill="#04121e" layoutX="1285.0" layoutY="740.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c13" fill="#04121e" layoutX="1450.0" layoutY="740.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c14" fill="#04121e" layoutX="1630.0" layoutY="738.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c15" fill="#04121e" layoutX="1795.0" layoutY="736.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c16" fill="#04121e" layoutX="565.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c17" fill="#04121e" layoutX="645.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c18" fill="#04121e" layoutX="735.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c19" fill="#04121e" layoutX="815.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c20" fill="#04121e" layoutX="905.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c21" fill="#04121e" layoutX="985.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c22" fill="#04121e" layoutX="1075.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c23" fill="#04121e" layoutX="1155.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c24" fill="#04121e" layoutX="1245.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c25" fill="#04121e" layoutX="1325.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c26" fill="#04121e" layoutX="1415.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c27" fill="#04121e" layoutX="1495.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c28" fill="#04121e" layoutX="1585.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c29" fill="#04121e" layoutX="1665.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c30" fill="#04121e" layoutX="1755.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Circle fx:id="c31" fill="#04121e" layoutX="1835.0" layoutY="850.0" radius="100.0" scaleX="0.4" scaleY="0.4" />
+                <Label fx:id="l1" alignment="CENTER" contentDisplay="CENTER" layoutX="1183.0" layoutY="130.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l2" alignment="CENTER" contentDisplay="CENTER" layoutX="842.0" layoutY="320.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l3" alignment="CENTER" contentDisplay="CENTER" layoutX="1523.0" layoutY="320.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l4" alignment="CENTER" contentDisplay="CENTER" layoutX="673.0" layoutY="530.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l5" alignment="CENTER" contentDisplay="CENTER" layoutX="1013.0" layoutY="530.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l6" alignment="CENTER" contentDisplay="CENTER" layoutX="1343.0" layoutY="530.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l7" alignment="CENTER" contentDisplay="CENTER" layoutX="1693.0" layoutY="530.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l8" alignment="CENTER" contentDisplay="CENTER" layoutX="577.0" layoutY="720.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l9" alignment="CENTER" contentDisplay="CENTER" layoutX="748.0" layoutY="720.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l16" alignment="CENTER" contentDisplay="CENTER" layoutX="537.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l17" alignment="CENTER" contentDisplay="CENTER" layoutX="618.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l18" alignment="CENTER" contentDisplay="CENTER" layoutX="708.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l10" alignment="CENTER" contentDisplay="CENTER" layoutX="917.0" layoutY="720.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l11" alignment="CENTER" contentDisplay="CENTER" layoutX="1089.0" layoutY="720.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l12" alignment="CENTER" contentDisplay="CENTER" layoutX="1258.0" layoutY="719.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l19" alignment="CENTER" contentDisplay="CENTER" layoutX="790.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l20" alignment="CENTER" contentDisplay="CENTER" layoutX="876.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l21" alignment="CENTER" contentDisplay="CENTER" layoutX="956.0" layoutY="831.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l22" alignment="CENTER" contentDisplay="CENTER" layoutX="1048.0" layoutY="829.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l23" alignment="CENTER" contentDisplay="CENTER" layoutX="1127.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l13" alignment="CENTER" contentDisplay="CENTER" layoutX="1423.0" layoutY="719.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l24" alignment="CENTER" contentDisplay="CENTER" layoutX="1216.0" layoutY="829.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l26" alignment="CENTER" contentDisplay="CENTER" layoutX="1389.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l27" alignment="CENTER" contentDisplay="CENTER" layoutX="1469.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l14" alignment="CENTER" contentDisplay="CENTER" layoutX="1602.0" layoutY="719.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l28" alignment="CENTER" contentDisplay="CENTER" layoutX="1558.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l29" alignment="CENTER" contentDisplay="CENTER" layoutX="1637.0" layoutY="829.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l15" alignment="CENTER" contentDisplay="CENTER" layoutX="1767.0" layoutY="715.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l30" alignment="CENTER" contentDisplay="CENTER" layoutX="1727.0" layoutY="830.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l31" alignment="CENTER" contentDisplay="CENTER" layoutX="1809.0" layoutY="828.0" prefHeight="40.0" prefWidth="54.0" />
+                <Label fx:id="l25" alignment="CENTER" contentDisplay="CENTER" layoutX="1296.0" layoutY="829.0" prefHeight="40.0" prefWidth="54.0" textAlignment="CENTER" />
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
