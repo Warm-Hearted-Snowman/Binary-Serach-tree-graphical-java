@@ -13,11 +13,11 @@ We used `java-fx` for GUI part and `css` for styling our GUI.
 * Parent Node
 
 ## Screen-Shots
-![](https://i.imgur.com/8OI0BzE.gif)
-
-![](https://i.imgur.com/vhSuaF6.gif)
+![](https://i.imgur.com/bZHpMS8.gif)
 
 ![](https://i.imgur.com/7lLm4Uc.gif)
+
+![](https://i.imgur.com/ApI2GN1.gif)
 
 ## Methods
 ### Add Node( node )
