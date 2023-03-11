@@ -5,6 +5,20 @@ Binary Search Trees are a good way to store data in sorted order.
 
 We used `java-fx` for GUI part and `css` for styling our GUI.
 
+## Node Arguments
+
+* Key (Value)
+* Right Node
+* Left Node
+* Parent Node
+
+## Screen-Shots
+![](https://i.imgur.com/8OI0BzE.gif)
+
+![](https://i.imgur.com/vhSuaF6.gif)
+
+![](https://i.imgur.com/7lLm4Uc.gif)
+
 ## Methods
 ### Add Node( node )
 > Inserts the new node into the tree. Returns true if inserted, false if duplicate.
@@ -26,22 +40,6 @@ We used `java-fx` for GUI part and `css` for styling our GUI.
 > Calculate number of leaves.
 ### Post-Pre-In-Level Order Traversal()
 > Show Post-Pre-In-Level Order Traversal in textfield under buttons.
-## Lists
-
-### Node Arguments
-
-* Key (Value)
-* Right Node
-* Left Node
-* Parent Node
-
-
-## Screen-Shots
-![](https://i.imgur.com/8OI0BzE.gif)
-
-![](https://i.imgur.com/vhSuaF6.gif)
-
-![](https://i.imgur.com/7lLm4Uc.gif)
 
 ## Developer
 
